@@ -1,3 +1,3 @@
 # dsalgo-py
 
-Data structures and algorithms in Python
+Neetcode/Leetcode data structures and algorithms in Python
