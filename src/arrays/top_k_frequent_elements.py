@@ -7,13 +7,7 @@ def k_freq_eles(nums: List[int], k: int) -> List[int]:
     for num in nums:
         nums_dict[num] = 1 + nums_dict.get(num, 0)
 
-    res = []
-    sorted_list = sorted(nums_dict.items(), key=lambda item: item[1], reverse=True)
-
-    for i in range(k):
-        res.append(sorted_list[i][0])
-
-    return res
+    return [item[0] for item in sorted(nums_dict.items(), key=lambda item: item[1], reverse=True)[:k]]
 
 
 if __name__ == '__main__':
